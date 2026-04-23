@@ -10,21 +10,25 @@ int main()
         cout << "Por favor, ingresa un numero positivo." << endl;
         cin >> num;
     }
-
+    j = num;   
     for (i = 0; num != 1; i++) 
     {
         if (num % 2 == 0) {
             num = num / 2;
-            cout << num << " -> ";
         } else {
             num = num * 3 + 1;
-            cout << num << " -> ";
+        }
+        cout << num;
+
+        if (num != 1)
+        {
+            cout << " -> ";
         }
         if (num > j)
         {
             j = num;
         }
     }
-    cout << "El numero de pasos necesarios para llegar a 1 es: " << i << endl;
-    cout << "El numero mas grande de la secuencia es: " << j << endl;
+    cout << "\nPasos: " << i << endl;
+    cout << "Valor maximo: " << j << endl;
 }
