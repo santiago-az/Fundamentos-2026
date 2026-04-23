@@ -31,4 +31,5 @@ int main()
     }
     cout << "\nPasos: " << i << endl;
     cout << "Valor maximo: " << j << endl;
+    return 0;
 }
