@@ -5,15 +5,15 @@ using namespace std;
 
 int main()
 {
-    int num, num2, i, i2, numorg;
+    int num, num2, i = 0, i2 = 0, numorg;
     string result = "", result2 = "", istring = "";
     cout << "Ingrese un numero entre [1 - 255]: ";
     cin >> num;
     num2 = num;
     numorg = num;
-    i2 = i;
-    if (num < 1 || num > 255)
+    while (num < 1 || num > 255)
     {
+        cout << "El numero ingresado es erroneo, ingrese otro: ";
         cin >> num;
     }
     while (num != 0)
@@ -51,10 +51,6 @@ int main()
         else if (istring == "15")
         {
             istring = 'F';
-        }
-        else if (istring == "16")
-        {
-            istring = 'G';
         }
         result2 = istring + result2;
     }

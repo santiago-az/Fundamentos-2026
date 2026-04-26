@@ -1,11 +1,12 @@
 #include <iostream>
 #include <string>
+
 using namespace std;
 
 int main()
 {
 
-    int num, primo = 2, numi, cantidadprimos = 0;
+    int num, primo = 2, numi, cantidadPrimos = 0;
     string i = "", descomposicion = "";
     cout << "ingrese un numero mayor que 1: ";
     cin >> num;
@@ -36,6 +37,6 @@ int main()
         
     }
     cout << numi << " = " << descomposicion;
-    cout << "\nCantidad de factores primos: " << cantidadprimos;
+    cout << "\nCantidad de factores primos: " << cantidadPrimos;
     return 0;
 }
