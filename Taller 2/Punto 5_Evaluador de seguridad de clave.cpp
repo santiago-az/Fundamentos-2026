@@ -60,11 +60,11 @@ int main ()
     {
         cout << "La contraseña es debil. " << endl;
     }
-    else if (contador == 2)
+    else if (contador >= 2 && contador < 4)
     {
         cout << "La contraseña es media. " << endl;
     }
-    else if (contador > 2)
+    else if (contador == 4)
     {
         cout << "La contraseña es fuerte. " << endl;
     }

@@ -25,6 +25,6 @@ int main()
     cout << "Escriba dos numeros: ";
     cin >> num1;
     cin >> num2;
-    cout << "Este es el mcm de los dos numeros: " << mcm(num1, num2);
+    cout << "Este es el mcm de los dos numeros es: " << mcm(num1, num2);
     return 0;
 }
